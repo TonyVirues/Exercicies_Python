@@ -1,6 +1,6 @@
 from math import pi
-n_1=float(input("Escriba el primer numero "))
-n_2=float(input("Escriba el segundo numero "))
+n_1=float(input("Escriba el primer número "))
+n_2=float(input("Escriba el segundo número "))
 sumar=n_1+n_2
 resta=n_1-n_2
 producto=n_1*n_2
