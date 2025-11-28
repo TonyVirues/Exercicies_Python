@@ -1,27 +1,15 @@
-#imprime un rombo sólido de altura 2n-1, centrado, usando asteriscos
-altura =5
+#Imprime un diamante hueco de altura total 2n-1, centrado con asteriscos, donde solo se imprimen los bordes y el centro. 
+#Figura para n=5
+n = int(input("Escribe un número :"))
+altura = 2*n-1
 
 for i in range(1,altura):
-    for j in range(i,altura,2):
-            print("*",end=" ")
-    print("")
-
-#otra figura
+     if i==1:
+          print(" "*(altura-i)+" *"*(2*i-1))
+     else:
+           print(" "*(altura-i)+" *"+"  "*(i-2)+" *")
 for i in range(altura,0,-1):
-    print(" "*(altura-i)+"*"*(2*i-1))
-
-#otra figura
-for i in range(1,altura+1):
-     print(" "*(altura-i)+"*"*(2*i-1))
-
-
-for i in range(1,altura+1):
-    if i==1:
-        print(" *")
-    elif i==altura:
-         print(" *"*i)
-    else:
-         print(" *"+"  "*(i-2)+" *")
-#otra figura
-for i in range(altura-1,0,-1):
-    print(" "*(altura-i)+"*"*(2*i-1))
+     if i==1:
+           print(" "*(altura-i)+" *"*(2*i-1))
+     else:
+          print(" "*(altura-i)+" *"+"  "*(i-2)+" *")
