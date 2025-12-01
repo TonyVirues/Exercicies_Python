@@ -1,7 +1,7 @@
 #Imprime una estrella de ocho puntas combinando lineas verticales, horizontales y diagonales con asteriscos en una matriz de tamaño impar n x n 
 #Figura para n=9
-n = int(input("Escribe un número :"))
-altura = n*n
+
+altura = 4
 for i in range(altura):
     if i==0:
         print("*"+(" "*(altura-i))+"*"+(" "*(altura-i))+"*")
