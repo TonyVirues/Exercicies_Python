@@ -11,3 +11,4 @@ for i in range (len(cadena)):
         resultado += cadena[i]
         print()
 print(resultado)
+
