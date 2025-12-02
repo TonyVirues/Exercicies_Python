@@ -14,7 +14,11 @@ for i in cadena:
                 nuevaCadena += i
                 contador = 0
         else:
-            print()
+            print("")
 print(nuevaCadena)
 
 #Sencillo
+for i in cadena:
+    if cadena.count(i) > 1:
+        nuevaCadena += i
+print(nuevaCadena)
